@@ -17,11 +17,14 @@
         <div class="container">
           <div class="row">
             <?php
-            if( have_rows('ajouter_des_images') ):
-              while ( have_rows('ajouter_des_images') ) : the_row();
+            if( have_rows('ajouter_des_creations') ):
+              while ( have_rows('ajouter_des_creations') ) : the_row();
             ?>
-            <div class="col-md-3">
-              <div class="photo" style="background-image: url(<?php echo the_sub_field('image'); ?>)"></div>
+            <div class="col-md-4 divCrea">
+                <a href="<?php echo the_sub_field('image'); ?>" rel="lightbox">
+                  <img class="photo" src="<?php echo the_sub_field('image'); ?>" alt="">
+                </a>
+              <p><?php echo the_sub_field('description'); ?></p>
             </div>
             <?php
                 endwhile;

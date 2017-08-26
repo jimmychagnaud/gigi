@@ -29,26 +29,6 @@ function custom_shortcode_atts_wpcf7_filter( $out, $pairs, $atts ) {
     return $out;
 }
 
-// function create_post_creation() {
-//     register_post_type('creation', [
-//         'labels' => [
-//             'name' => __('creation'),
-//             'singular_name' => __('creation'),
-//             'add_new_item' => __('Ajouter une nouvelle création'),
-//             'edit_item' => __('Modifier une création'),
-//             'all_items' => __('Toute les créations'),
-//             'view_items' => __('Voir toutes les créations'),
-//             'view_item' => __('Voir la création')
-//         ],
-//         'public' => true,
-//         'has_archive' => true,
-//         'rewrite' => ['slug' => 'creation'],
-//         'capability_type' => 'page',
-//         'menu_icon' => 'dashicons-admin-users'
-//     ]);
-// }
-// add_action('init', 'create_post_creation');
-
 add_filter('get_sample_permalink_html', 'hide_permalinks', 10, 5);
 
 function hide_permalinks($return, $post_id, $new_title, $new_slug, $post)

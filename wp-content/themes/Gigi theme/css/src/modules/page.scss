@@ -25,27 +25,4 @@
       left: 3%;
     }
   }
-  #ticket {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    z-index: 8;
-    background: url('../cirque/img/ticket.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 150px;
-    transform: rotate(18deg) translateX(-50%);
-    @media (max-width: 900px) {
-      width: 175px;
-      left: 50%;
-    }
-    @media (max-width: 480px) {
-      width: 175px;
-      height: 100px;
-      top: 55%;
-      left: 3%;
-      transform: none;
-    }
-  }
 }
