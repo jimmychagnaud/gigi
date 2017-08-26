@@ -1,0 +1,16 @@
+/*
+Theme Name: Gigi
+Theme URI: http://giselevienet.fr
+Description: Theme propriétaire Gisele vienet
+Version: 1.0
+Author: Wehub
+Author URI: http://www.wehub.fr
+*/
+
+@import '../../assets/stylesheets/_bootstrap.scss';
+@import 'variables';
+
+@import 'modules/index';
+@import 'modules/footer';
+@import 'modules/page';
+@import 'modules/header';

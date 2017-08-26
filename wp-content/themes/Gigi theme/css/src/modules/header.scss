@@ -1,0 +1,18 @@
+header {
+  background: url('../Gigi theme/img/background.png')no-repeat center fixed;
+  background-size: cover; // background-position: center top;
+}
+
+.navbar-default {
+  background: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  border: none;
+  ul {
+    float: right;
+  }
+  .navbar-nav>li>a:hover,
+  .navbar-nav>li>a:focus {
+    color: $base;
+    background-color: transparent;
+  }
+}

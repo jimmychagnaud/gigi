@@ -1,0 +1,166 @@
+/*
+* @Author: wehubAgency
+* @Date:   2017-08-11 17:53:10
+* @Last Modified by:   wehubAgency
+* @Last Modified time: 2017-08-11 17:53:12
+*/
+
+@font-face {
+  font-family: 'Philing';
+  src: url('../Gigi theme/fonts/philing-webfont.woff');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../Gigi theme/fonts/HelveticaNeue-Thin.otf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../Gigi theme/fonts/helvetica-neue-bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../Gigi theme/fonts/HelveticaNeue-Light.otf');
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Helvetica';
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+  border: none;
+  ul {
+    float: right;
+  }
+}
+
+#header_homepage {
+  position: relative;
+  height: 70vh;
+  min-height: 600px;
+  overflow: hidden;
+  .logo {
+    position: absolute;
+    margin-left: 80px;
+    width: 300px;
+    z-index: 10;
+    top: 10%;
+    @media (max-width: 1200px) {
+      margin-left: 0;
+    }
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+    @media (max-width: 480px) {
+      width: 250px;
+      margin-left: 0;
+      top: 2%;
+      left: 47%;
+      transform: translateX(-50%)
+    }
+  }
+  #nom {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    margin-left: 150px;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: .7;
+    color: #49341B;
+    span {
+      color: white;
+      font-size: 2.2em;
+      line-height: 0.8;
+    }
+    @media (max-width: 1200px) {
+      margin-left: 50px;
+    }
+    @media (max-width: 768px) {
+      top: 47%;
+      margin-left: 50px;
+    }
+    @media (max-width: 480px) {
+      font-size: 3em;
+      top: 37%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+    }
+  }
+  #ticket {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    height: 150px;
+    width: 250px;
+    margin-left: 140px;
+    margin-top: 110px;
+    background: url('../cirque/img/ticket.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    @media (max-width: 1200px) {
+      margin-left: 50px;
+    }
+    @media (max-width: 768px) {
+      margin-left: 50px;
+    }
+    @media (max-width: 480px) {
+      margin-top: 55px;
+      margin-left: 0;
+      width: 45%;
+      top: 37%;
+      left: 27.5%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+#main {
+  #tickets {
+    text-align: center;
+    margin: 25px 0;
+    p {
+      font-family: 'Philing', sans-serif;
+      font-size: 3em;
+    }
+    a {
+      padding: 10px 30px;
+      background-color: $base;
+      font-weight: normal;
+    }
+  }
+  #content_homepage {
+    background-color: #eaeaea;
+    padding: 25px 0;
+    h1 {
+      color: $base;
+      font-family: 'Philing';
+      font-size: 2em;
+    }
+    .container {
+      background: #eaeaea;
+    }
+    #crea_homepage {
+      .photo {
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

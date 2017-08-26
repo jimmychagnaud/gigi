@@ -1,0 +1,15 @@
+footer {
+  background: white;
+  border-top: solid 10px $base;
+  padding: 15px 0;
+  .footer_contact {
+    margin-left: 50px;
+    line-height: 1;
+    p:first-child {
+      color: $base;
+    }
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+}
