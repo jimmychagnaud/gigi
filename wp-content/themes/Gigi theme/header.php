@@ -25,8 +25,9 @@
             <?php wp_nav_menu([
               'theme_location' => 'Top',
               'menu_id' => 'top-menu',
-              'menu_class' => 'nav navbar-nav'
-            ]) ?>
+              'menu_class' => 'nav navbar-nav',
+              'items_wrap' => '<ul id="%1$s" class="%2$s"><li><a href="/">Accueil</a></li>%3$s</ul>'
+            ])?>
           </div>
         </div>
       </nav>
